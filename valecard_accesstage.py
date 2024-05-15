@@ -3,7 +3,7 @@ import os
 while True:
     print('====== PADRÃO VALECARD X ACCESSTAGE ======')
     cnpj = input('Digite o CNPJ do cliente: ')
-    dsname = input('Informe o Dsname do cliente: ')
+    dsname = input('Informe o Dsname do cliente: ').upper()
     os.system('cls')
 
     print(f'''==== VALECARD.VALECARD (19798) ====
@@ -26,10 +26,10 @@ ESTAÇÃO(BANCO):
     print(f'''
 ==== CAIXA ACCESSTAGE.OPERADORAS (34776) ====
 
-MÁSCARA ENTRADA BANCO:
+MÁSCARA ENTRADA CLIENTE:
 REM.EXT.{cnpj}.230
 
-MÁSCARA SAÍDA BANCO:
+MÁSCARA SAÍDA CLIENTE:
 {dsname}.V%d%m%y%H%M%S.TMP
 
 SCRIPT P/ VALIDAÇÃO CLIENTE:
